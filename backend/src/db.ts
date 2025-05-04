@@ -6,7 +6,7 @@ const db = new sqlite3.Database(dbPath);
 
 db.serialize(() => {
   db.run(
-    "CREATE TABLE IF NOT EXISTS todos(id INTEGER PRIMARY Key AUTOINCREMENT, task TEXT NOT NULL"
+    "CREATE TABLE IF NOT EXISTS todos(id INTEGER PRIMARY KEY AUTOINCREMENT, task TEXT NOT NULL)"
   );
 });
 
